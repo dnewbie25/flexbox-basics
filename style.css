@@ -1,3 +1,298 @@
-h1{
-  background-color: red;
+/*CSS reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Styling*/
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+body > * {
+  flex: 1;
+  padding: 10px 6rem;
+}
+/* Nav bar styles */
+nav,
+#header,
+footer {
+  background-color: #1f2937;
+  color: white;
+}
+
+#logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+ul li {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+/* header styles */
+#header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1;
+}
+
+#header div {
+  width: 50%;
+  padding: 2rem 0;
+}
+#header h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+#header p {
+  line-height: 1.3rem;
+  margin: 1rem 0;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+#header button {
+  background-color: #3882f6;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  color: #f9faf8;
+}
+
+#header #image {
+  margin: 2rem 0;
+  background-color: #898c91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+}
+
+/* information styles */
+#information {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+#information #boxes {
+  display: flex;
+  gap: 2.3rem;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+#information .box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid darkblue;
+  position: relative;
+}
+#information .box::after {
+  content: "this is some subtext under an illustration or image";
+  position: absolute;
+  font-size: 10px;
+  color: #898c91;
+  top: calc(50% - 20px);
+  left: 10px;
+  right: 10px;
+}
+#information h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: ;
+}
+
+/* quote section */
+#quote {
+  background-color: #e5e7eb;
+  text-align: center;
+  font-style: italic;
+  padding: 2rem;
+  font-size: 18px;
+}
+#quote figcaption {
+  margin-top: 1rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* sign section */
+#sign {
+  background-color: #3882f6;
+  margin: 4rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-shrink: 1;
+}
+#sign h3 {
+  color: white;
+  font-weight: bold;
+}
+#sign p {
+  color: #444950;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+}
+#sign button {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+}
+
+/* footer styles */
+footer {
+  padding: 8px;
+  flex: 0 0 20px;
+  text-align: center;
 }
